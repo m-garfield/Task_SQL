@@ -1,333 +1,136 @@
--- 1.Исполниели 
-
 INSERT INTO executor (name)
-VALUES ('Scorpions');
-
-INSERT INTO executor (name)
-VALUES ('Jennifer Lopez');
-
-INSERT INTO executor (name)
-VALUES ('Aaron Neville');
-
-INSERT INTO executor(name)
-VALUES ('50 cent');
-
-INSERT INTO executor (name)
-VALUES ('David Guetta');
-
-INSERT INTO executor(name)
-VALUES ('AC/DC');
-
-INSERT INTO executor(name)
-VALUES ('Alizee');
-
-INSERT INTO executor(name)
-VALUES ('Король и Шут');
-
--- 2.Альбом
-INSERT INTO album(name,year)
-VALUES ('Love Letters: The Allen Toussaint Sessions',2018);
+VALUES ('Scorpions'),
+('Jennifer Lopez'),('Aaron Neville'),
+('50 cent'),
+('David Guetta'),
+('AC/DC'),('Alizee'),
+('Король и Шут')
+;
 
 INSERT INTO album(name,year)
-VALUES ('Street King Immortal',2013);
+VALUES 
+('Love Letters: The Allen Toussaint Sessions',2018),
+('Street King Immortal',2013),
+('Remixes',2018),
+('Virgin Killer',1976),
+('Продавец кошмаров',2006),
+('High Voltage',1976),
+('Fuck Me Im Famous',2003),
+('This Is Me… Then',2002),
+('Power of the Dollar',2020)
+;
 
-INSERT INTO album(name,year)
-VALUES ('Remixes',2018);
+INSERT INTO track(name,duration,album_id)
+VALUES 
+('Street King','00:03:47',2),
+('Trapped','00:04:19',2),
+('Champion','00:03:49',2),
+('Just for One Day','00:05:15',7),
+('Shout','00:05:19',7),
+('Sunshine','00:05:43',7),
+('Moi… Lolita ','00:03:40',3),
+('Gourmandises','00:07:45',3),
+('J’en ai marre','00:07:49',3),
+('Pictured Life','00:03:25',4),
+('In Your Park','00:03:26',4),
+('Virgin Killer','00:03:24',4),
+('Марионетки','00:03:36',5),
+('Дайте людям рому!','00:03:21',5),
+('Маска','00:04:44',5),
+('Still','00:03:41',8),
+('Im Glad!','00:03:42',8),
+('Dear Ben','00:03:14',8),
+('Its a Long Way to the Top','00:05:01',6),
+('The Jack','00:05:52',6),
+('T.N.T.','00:03:35',6),
+('You Can Give But You Cant Take','00:03:49',1),
+('Speak to Me','00:02:41',1),
+('Where Is My Baby?','00:04:00',1),
+('Wanksta','00:04:05',9)
+;
 
-INSERT INTO album(name,year)
-VALUES ('Virgin Killer',1976);
-
-INSERT INTO album(name,year)
-VALUES ('Продавец кошмаров',2006);
-
-INSERT INTO album(name,year)
-VALUES ('High Voltage',1976);
-
-INSERT INTO album(name,year)
-VALUES ('Fuck Me Im Famous',2003);
-
-INSERT INTO album(name,year)
-VALUES ('This Is Me… Then',2002);
-
--- 3.Песни
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Street King', 227,2 ,4);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Trapped',259,2,4);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Champion',221,2,4);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Just for One Day',315,7,5);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Shout',319,7,5);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Sunshine',343,7,5);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Moi… Lolita ',220 ,3,7);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Gourmandises',465 ,3,7);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('J’en ai marre',469,3,7);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Pictured Life  ',205,4,1);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('In Your Park',226 ,4,1);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Virgin Killer',224,4,1);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Марионетки',216,5,8);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Дайте людям рому!', 161,5,8);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Маска',284,5,8);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Still',221,8,2);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Im Glad!',222 ,8,2);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Dear Ben',194,8,2);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Its a Long Way to the Top',301,6,6);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('The Jack',352,6,6);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('T.N.T.',215,6,6);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('You Can Give But You Cant Take',229,1,3);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Speak to Me',161,1,3);
-
-INSERT INTO track(name,duration,album,executor)
-VALUES ('Where Is My Baby?',240,1,3);
-
-
--- 4.Жанры 
-
-INSERT INTO genre (name_genre)
-VALUES ('Rock');
-
-INSERT INTO genre(name_genre)
-VALUES ('Pop');
-
-INSERT INTO genre(name_genre)
-VALUES ('Jazz');
-
-INSERT INTO genre(name_genre)
-VALUES ('Hip-hop');
-
-INSERT INTO genre(name_genre)
-VALUES ('Disco');
-
-
--- 5.Сборники
+INSERT INTO genre (name)
+VALUES 
+('Rock'),
+('Pop'),
+('Jazz'),
+('Hip-hop'),
+('Disco')
+;
 
 INSERT INTO playlist (name,year)
-VALUES ('Rock',2017);
-
-INSERT INTO playlist (name,year)
-VALUES ('POP',2016);
-
-INSERT INTO playlist (name,year)
-VALUES ('Jazz',2015);
-
-INSERT INTO playlist (name,year)
-VALUES ('Hip-Hop',2018);
-
-INSERT INTO playlist (name,year)
-VALUES ('Dance',2019);
-
-INSERT INTO playlist (name,year)
-VALUES ('Like',2020);
-
-INSERT INTO playlist (name,year)
-VALUES ('Rock New',2021);
-
-INSERT INTO playlist (name,year)
-VALUES ('New Musik',2022);
-
--- 6.Сборник/Песня
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (1,13);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (1,14);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (1,15);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (1,21);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (1,22);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (1,23);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (2,7);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (2,8);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (2,9);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (2,16);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (2,17);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (2,18);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (3,22);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (3,23);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (3,24);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (4,16);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (4,17);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (4,18);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (4,5);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (4,6);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (5,16);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (5,17);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (5,18);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (5,20);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (5,21);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (6,1);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (6,4);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (6,10);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (6,14);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (6,17);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (6,20);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (7,13);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (7,14);
-
-INSERT INTO playlist_track(id_playlist,id_track)
-VALUES (7,15);
-
--- 7.Исполнитель/жанр
-
-INSERT INTO executor_genre (id_genre,id_executor)
-VALUES (1,1);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (2,2);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (3,3);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (4,4);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (5,5);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (1,6);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (2,7);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (1,8);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (5,6);
-
-INSERT INTO executor_genre(id_genre,id_executor)
-VALUES (4,2);
-
-
-
---8.Исполнитель/альбом
-
-INSERT INTO executor_album (id_album,id_executor)
-VALUES (1,3);
-
-INSERT INTO executor_album (id_album,id_executor)
-VALUES (2,4);
-
-INSERT INTO executor_album (id_album,id_executor)
-VALUES (3,7);
-
-INSERT INTO executor_album (id_album,id_executor)
-VALUES (4,1);
-
-INSERT INTO executor_album (id_album,id_executor)
-VALUES (5,8);
-
-INSERT INTO executor_album (id_album,id_executor)
-VALUES (6,6);
-
-INSERT INTO executor_album (id_album,id_executor)
-VALUES (7,5);
-
-INSERT INTO executor_album (id_album,id_executor)
-VALUES (8,2);
+VALUES 
+('Rock',2017),
+('POP',2016),
+('Jazz',2015),
+('Hip-Hop',2018),
+('Dance',2019),
+('Like',2020),
+('Rock New',2021),
+('New Musik',2022)
+;
+
+INSERT INTO playlist_track(playlist_id,track_id)
+VALUES 
+(1,13),
+(1,14),
+(1,15),
+(1,21),
+(1,22),
+(1,23),
+(2,7),
+(2,8),
+(2,9),
+(2,16),
+(2,17),
+(2,18),
+(3,22),
+(3,23),
+(3,24),
+(4,16),
+(4,17),
+(4,18),
+(4,5),
+(4,6),
+(5,16),
+(5,17),
+(5,18),
+(5,20),
+(5,21),
+(6,1),
+(6,4),
+(6,10),
+(6,14),
+(6,17),
+(6,20),
+(7,13),
+(7,14),
+(7,15)
+;
+
+INSERT INTO genre_executor (genre_id,executor_id)
+VALUES 
+(1,1),
+(2,2),
+(3,3),
+(4,4),
+(5,5),
+(1,6),
+(2,7),
+(1,8),
+(5,6),
+(4,2) 
+;
+
+INSERT INTO executor_album (album_id,executor_id)
+VALUES 
+(1,3),
+(2,4),
+(3,7),
+(4,1),
+(5,8),
+(6,6),
+(7,5),
+(8,2),
+(9,4)
+;
